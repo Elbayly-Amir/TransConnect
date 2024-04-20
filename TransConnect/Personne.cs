@@ -38,6 +38,7 @@ namespace TransConnect
         // Ici on définit nos propriétés 
         public string NumeroSS { get { return this.numeroSS; } set { this.numeroSS = value; } }
         public string Nom {  get { return this.nom; } set {   this.nom = value; }  }
+        public string Prenom { get { return this.prenom; } set { this.prenom = value; } }
         public DateTime DateNaissance { get { return this.dateNaissance; } set { this.dateNaissance = value; } }
         public string Adresse { get {  return this.adresse; } set { this.adresse = value; } }
         public string Email { get { return this.email; } set { this.email = value; } }

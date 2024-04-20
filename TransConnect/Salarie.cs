@@ -15,7 +15,7 @@ namespace TransConnect
         public Salarie manager;
         public List<Salarie> employe { get; set; } = new List<Salarie>();
 
-        public Salarie(string numeroSS, string nom, string prenom, DateTime dateNaissance, string adresse, string email, string telephone, DateTime dateEntre, string poste, decimal salaire): base(numeroSS, nom, prenom, dateNaissance)
+        public Salarie(string numeroSS, string nom, string prenom, DateTime dateNaissance, string adresse, string email, string telephone, DateTime dateEntre, string poste, decimal salaire) : base(numeroSS, nom, prenom, dateNaissance, adresse, email, telephone)
         {
             this.dateEntre = dateEntre;
             this.poste = poste;
