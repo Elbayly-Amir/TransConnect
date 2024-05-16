@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace TransConnect
 {
-    /*public class CamionFrigorifique : Vehicule
+    public class Statistique
     {
 
 
-    }*/
+    }
 }

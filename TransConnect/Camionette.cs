@@ -11,8 +11,7 @@ namespace TransConnect
 
         string usage;
 
-        public Camionette(string plaque, double kilometrage, string usage)
-       : base(plaque, kilometrage)
+        public Camionette(string plaque, double kilometrage, string usage): base(plaque, kilometrage)
         {
             this.usage = usage;
         }

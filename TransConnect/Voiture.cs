@@ -9,13 +9,13 @@ namespace TransConnect
     public class Voiture : Vehicule
     {
 
-        int nombrePassagers;
+      
 
-        public Voiture(string plaque, double kilometrage, int nombrePassagers)
+        public Voiture(string plaque, double kilometrage)
         : base(plaque, kilometrage)
         {
 
-            this.nombrePassagers = nombrePassagers;
+            ;
         }
 
     }

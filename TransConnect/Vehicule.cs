@@ -6,16 +6,16 @@ using System.Threading.Tasks;
 
 namespace TransConnect
 {
-    public abstract class Vehicule
+    public  class Vehicule
     {
 
         protected string plaque;
-        public double kilometrage;
+        public double Kilometrage { get; set; }
 
         public Vehicule(string plaque, double kilometrage)
         {
             this.plaque = plaque;
-            this.kilometrage = kilometrage;
+            this.Kilometrage = kilometrage;
         }
 
         

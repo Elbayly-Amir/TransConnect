@@ -41,7 +41,7 @@ namespace TransConnect
 
         public override string ToString()
         {
-            return $"Commande ID: {IdCommande}, Client: {Client.Nom}, Chauffeur: {Chauffeur.Nom}, Date: {DateCommande.ToShortDateString()}, De {VilleDepart} à {VilleArrivee}, Prix: {Prix}€";
+            return $"Commande ID: {IdCommande}, Client: {Client.Nom}, Chauffeur: {Chauffeur.Nom}, Date: {DateCommande.ToShortDateString()}, De {VilleDepart} à {VilleArrivee}, Prix: {Prix} euros";
         }
 
         public int IdCommande {  get { return id_commande; } set { id_commande = value; } }

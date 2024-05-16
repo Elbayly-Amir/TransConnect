@@ -27,7 +27,7 @@ namespace TransConnect
             this.email = email;
             this.telephone = telephone;
         }
-        //  
+
         public void ModifierPersonne(string nouveauNom, string nouvelleAdresse, string nouvelEmail, string nouveauTelephone)
         {
             this.nom = nouveauNom;
