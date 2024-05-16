@@ -1,0 +1,16 @@
+[
+  {
+    "Id": "2c222d8e-0744-4272-8bf0-2e7989cb13fa",
+    "NumeroSSSalarie": "36",
+    "Description": "FEUILLE A4",
+    "Montant": 200.0,
+    "DateDepense": "2024-05-16T00:00:00"
+  },
+  {
+    "Id": "76ba0e2e-aa31-4c1a-b922-312e768ac2b4",
+    "NumeroSSSalarie": "97",
+    "Description": "essence",
+    "Montant": 500.0,
+    "DateDepense": "2024-12-12T00:00:00"
+  }
+]

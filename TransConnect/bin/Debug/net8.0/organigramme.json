@@ -1,0 +1,68 @@
+{
+  "$id": "1",
+  "racine": {
+    "$id": "2",
+    "dateEntre": "2015-12-12T00:00:00",
+    "poste": "Directeur",
+    "salaire": 10254.0,
+    "manager": null,
+    "Id": null,
+    "Employes": [
+      {
+        "$id": "3",
+        "dateEntre": "2022-12-12T00:00:00",
+        "poste": "directeur logistique",
+        "salaire": 12000.0,
+        "manager": null,
+        "Id": null,
+        "Employes": [
+          {
+            "$id": "4",
+            "dateEntre": "2022-12-12T00:00:00",
+            "poste": "assistant",
+            "salaire": 1400.0,
+            "manager": null,
+            "Id": null,
+            "Employes": [],
+            "DateEntre": "2022-12-12T00:00:00",
+            "Poste": "assistant",
+            "Salaire": 1400.0,
+            "Manager": null,
+            "NumeroSS": "585",
+            "Nom": "zerf",
+            "Prenom": "zref",
+            "DateNaissance": "2002-01-01T00:00:00",
+            "Adresse": "zfe",
+            "Email": "gres",
+            "Telephone": "65432"
+          }
+        ],
+        "DateEntre": "2022-12-12T00:00:00",
+        "Poste": "directeur logistique",
+        "Salaire": 12000.0,
+        "Manager": null,
+        "NumeroSS": "97",
+        "Nom": "oui",
+        "Prenom": "tan",
+        "DateNaissance": "2000-12-12T00:00:00",
+        "Adresse": "oijnh",
+        "Email": "iuyg",
+        "Telephone": "0125487"
+      }
+    ],
+    "DateEntre": "2015-12-12T00:00:00",
+    "Poste": "Directeur",
+    "Salaire": 10254.0,
+    "Manager": null,
+    "NumeroSS": "36",
+    "Nom": "Amir",
+    "Prenom": "r",
+    "DateNaissance": "2003-12-12T00:00:00",
+    "Adresse": "okl",
+    "Email": "kolp",
+    "Telephone": "012458"
+  },
+  "Racine": {
+    "$ref": "2"
+  }
+}

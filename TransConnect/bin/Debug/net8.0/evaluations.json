@@ -1,0 +1,87 @@
+[
+  {
+    "$id": "1",
+    "Client": {
+      "$id": "2",
+      "Ville": "uyf",
+      "Achats": 45.0,
+      "NumeroSS": "525254",
+      "Nom": "ughh",
+      "Prenom": "uyttf",
+      "DateNaissance": "0200-12-12T00:00:00",
+      "Adresse": "hyvv",
+      "Email": "jhv",
+      "Telephone": "87"
+    },
+    "Chauffeur": {
+      "$id": "3",
+      "dateEntre": "2020-12-12T00:00:00",
+      "poste": "chauffeur",
+      "salaire": 1200.0,
+      "manager": {
+        "$id": "4",
+        "dateEntre": "2022-12-12T00:00:00",
+        "poste": "directeur logistique",
+        "salaire": 12000.0,
+        "manager": null,
+        "Id": null,
+        "Employes": [
+          {
+            "$id": "5",
+            "dateEntre": "2022-12-12T00:00:00",
+            "poste": "assistant",
+            "salaire": 1400.0,
+            "manager": null,
+            "Id": null,
+            "Employes": [],
+            "DateEntre": "2022-12-12T00:00:00",
+            "Poste": "assistant",
+            "Salaire": 1400.0,
+            "Manager": null,
+            "NumeroSS": "585",
+            "Nom": "zerf",
+            "Prenom": "zref",
+            "DateNaissance": "2002-01-01T00:00:00",
+            "Adresse": "zfe",
+            "Email": "gres",
+            "Telephone": "65432"
+          },
+          null,
+          null
+        ],
+        "DateEntre": "2022-12-12T00:00:00",
+        "Poste": "directeur logistique",
+        "Salaire": 12000.0,
+        "Manager": null,
+        "NumeroSS": "97",
+        "Nom": "oui",
+        "Prenom": "tan",
+        "DateNaissance": "2000-12-12T00:00:00",
+        "Adresse": "oijnh",
+        "Email": "iuyg",
+        "Telephone": "0125487"
+      },
+      "EstDisponible": true,
+      "Commandes": [],
+      "Id": null,
+      "Employes": [],
+      "DateEntre": "2020-12-12T00:00:00",
+      "Poste": "chauffeur",
+      "Salaire": 1200.0,
+      "Manager": {
+        "$ref": "4"
+      },
+      "NumeroSS": "258",
+      "Nom": "m",
+      "Prenom": "n",
+      "DateNaissance": "2000-12-12T00:00:00",
+      "Adresse": "y",
+      "Email": "k",
+      "Telephone": "54145"
+    },
+    "Note": 5,
+    "Commentaire": "bien",
+    "NumeroSSClient": "525254",
+    "NumeroSSChauffeur": "258"
+  }
+]
