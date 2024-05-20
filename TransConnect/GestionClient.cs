@@ -43,7 +43,6 @@ namespace TransConnect
             return null;
         }
 
-
         public List<Client> ListerClientsParVille(string ville)
         {
             return Clients.Where(c => c.Ville.Contains(ville)).ToList();
@@ -99,6 +98,16 @@ namespace TransConnect
         {
             string jsonData = JsonConvert.SerializeObject(Clients, Formatting.Indented);
             File.WriteAllText("clients.json", jsonData);
+        }
+
+        private List<Client> ChargerClients()
+        {
+            if (File.Exists("clients.json"))
+            {
+                string jsonData = File.ReadAllText("clients.json");
+                return JsonConvert.DeserializeObject<List<Client>>(jsonData) ?? new List<Client>();
+            }
+            return new List<Client>();
         }
     }
 }

@@ -9,6 +9,7 @@ class Program
     static GestionEvaluations gestionEvaluations = new GestionEvaluations();
     static ConsoleEvaluations consoleEvaluations = new ConsoleEvaluations(gestionEvaluations, gestionClient, gestionChauffeurs);
     static GestionDepenses gestionDepenses = new GestionDepenses();
+    static GestionReclamations gestionReclamations = new GestionReclamations();
     static void Main(string[] args)
     {
 
@@ -23,7 +24,8 @@ class Program
             Console.WriteLine("4. Gestion des chauffeurs");
             Console.WriteLine("5. Statistiques");
             Console.WriteLine("6. Gestion des Dépenses");
-            Console.WriteLine("7. Quitter");
+            Console.WriteLine("7. Gestion des réclamations");
+            Console.WriteLine("8. Quitter");
 
             Console.Write("Entrez votre choix : ");
             string choix = Console.ReadLine();
@@ -49,6 +51,9 @@ class Program
                     GestionDepenses();
                     break;
                 case "7":
+                    GestionReclamations();
+                    break;
+                case "8":
                     continuer = false;
                     Console.WriteLine("Fermeture de l'application...");
                     break;
@@ -94,6 +99,12 @@ class Program
     {
         ConsoleDepenses depensesManager = new ConsoleDepenses(gestionDepenses, organigramme);
         depensesManager.Run();
+    }
+
+    static void GestionReclamations()
+    {
+        ConsoleReclamations reclamationsManager = new ConsoleReclamations(gestionReclamations);
+        reclamationsManager.Run();
     }
 }
     

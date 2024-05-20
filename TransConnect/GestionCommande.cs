@@ -28,7 +28,7 @@ namespace TransConnect
 
         public void AjouterCommande(Client client, Salarie chauffeur, Vehicule vehicule, DateTime dateCommande, string villeDepart, string villeArrivee, decimal prix)
         {
-            Chauffeur chauff = chauffeur as Chauffeur;  // Tentative de conversion
+            Chauffeur chauff = chauffeur as Chauffeur;
             if (chauff != null && !chauff.EstDisponible)
             {
                 Console.WriteLine("Erreur: Le chauffeur n'est pas disponible à cette date.");
@@ -78,8 +78,6 @@ namespace TransConnect
             }
         }
 
-        
-
         public static GestionCommande LoadFromJson(string jsonData)
         {
             var commandes = JsonConvert.DeserializeObject<List<Commande>>(jsonData) ?? new List<Commande>(); 
@@ -101,7 +99,6 @@ namespace TransConnect
             }
         }
 
-
         public void AfficherMoyennePrixCommandes()
         {
             if (commandes.Count == 0)
@@ -114,7 +111,10 @@ namespace TransConnect
             Console.WriteLine($"Moyenne des prix des commandes : {moyennePrix}€");
         }
 
-
+        public List<Commande> TrouverCommandesParClient(string numeroSS)
+        {
+            return commandes.Where(c => c.Client.NumeroSS == numeroSS).ToList();
+        }
 
         public void AfficherCommandesParClient(string numeroSS)
         {

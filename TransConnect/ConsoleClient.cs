@@ -17,7 +17,6 @@ namespace TransConnect
         }
         public void Run()
         {
-            // Boucle de menu pour les actions liées au client
             bool continuer = true;
             while (continuer)
             {

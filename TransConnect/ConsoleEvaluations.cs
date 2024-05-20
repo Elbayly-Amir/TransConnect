@@ -19,6 +19,7 @@ namespace TransConnect
             this.gestionClient = ChargerClients();
             this.gestionChauffeurs = ChargerChauffeurs();
         }
+
         private GestionClient ChargerClients()
         {
             if (File.Exists("clients.json"))
@@ -40,6 +41,7 @@ namespace TransConnect
             }
             return new GestionChauffeurs();
         }
+
         public void Run()
         {
             bool continuer = true;
