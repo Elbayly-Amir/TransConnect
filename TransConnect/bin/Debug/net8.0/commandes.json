@@ -484,12 +484,6 @@
       "poste": "cv",
       "salaire": 1200.0,
       "manager": null,
-      "EstDisponible": false,
-      "Commandes": [
-        {
-          "$ref": "38"
-        }
-      ],
       "Id": null,
       "Employes": [],
       "DateEntre": "2022-12-12T00:00:00",
@@ -508,9 +502,338 @@
       "$id": "41",
       "Kilometrage": 926.0
     },
-    "DateCommande": "2024-05-12",
+    "DateCommande": "2024-05-12T00:00:00",
     "VilleDepart": "MARSEILLES",
     "VilleArrivee": "BORDEAUX",
     "Prix": 1389.0
+  },
+  {
+    "$id": "42",
+    "IdCommande": 9,
+    "Client": {
+      "$id": "43",
+      "Ville": "Chelles",
+      "Achats": 400.0,
+      "NumeroSS": "2021092",
+      "Nom": "Amara",
+      "Prenom": "Ines",
+      "DateNaissance": "2002-10-03T00:00:00",
+      "Adresse": "Chelles",
+      "Email": "ines@ines.fr",
+      "Telephone": "0125462"
+    },
+    "Chauffeur": {
+      "$id": "44",
+      "dateEntre": "2020-12-12T00:00:00",
+      "poste": "chauffeur",
+      "salaire": 1200.0,
+      "manager": {
+        "$id": "45",
+        "dateEntre": "2022-12-12T00:00:00",
+        "poste": "directeur logistique",
+        "salaire": 12000.0,
+        "manager": null,
+        "Id": null,
+        "Employes": [
+          {
+            "$id": "46",
+            "dateEntre": "2022-12-12T00:00:00",
+            "poste": "assistant",
+            "salaire": 1400.0,
+            "manager": null,
+            "Id": null,
+            "Employes": [],
+            "DateEntre": "2022-12-12T00:00:00",
+            "Poste": "assistant",
+            "Salaire": 1400.0,
+            "Manager": null,
+            "NumeroSS": "585",
+            "Nom": "zerf",
+            "Prenom": "zref",
+            "DateNaissance": "2002-01-01T00:00:00",
+            "Adresse": "zfe",
+            "Email": "gres",
+            "Telephone": "65432"
+          },
+          null,
+          null
+        ],
+        "DateEntre": "2022-12-12T00:00:00",
+        "Poste": "directeur logistique",
+        "Salaire": 12000.0,
+        "Manager": null,
+        "NumeroSS": "97",
+        "Nom": "oui",
+        "Prenom": "tan",
+        "DateNaissance": "2000-12-12T00:00:00",
+        "Adresse": "oijnh",
+        "Email": "iuyg",
+        "Telephone": "0125487"
+      },
+      "Id": null,
+      "Employes": [],
+      "DateEntre": "2020-12-12T00:00:00",
+      "Poste": "chauffeur",
+      "Salaire": 1200.0,
+      "Manager": {
+        "$ref": "45"
+      },
+      "NumeroSS": "258",
+      "Nom": "m",
+      "Prenom": "n",
+      "DateNaissance": "2000-12-12T00:00:00",
+      "Adresse": "y",
+      "Email": "k",
+      "Telephone": "54145"
+    },
+    "Vehicule": {
+      "$id": "47",
+      "Kilometrage": 464.0
+    },
+    "DateCommande": "2024-05-17T00:00:00",
+    "VilleDepart": "PARIS",
+    "VilleArrivee": "LYON",
+    "Prix": 696.0
+  },
+  {
+    "$id": "48",
+    "IdCommande": 10,
+    "Client": {
+      "$ref": "43"
+    },
+    "Chauffeur": {
+      "$id": "49",
+      "dateEntre": "2019-12-12T00:00:00",
+      "poste": "chauffeur",
+      "salaire": 1800.0,
+      "manager": {
+        "$id": "50",
+        "dateEntre": "2022-12-12T00:00:00",
+        "poste": "directeur logistique",
+        "salaire": 12000.0,
+        "manager": null,
+        "Id": null,
+        "Employes": [
+          {
+            "$id": "51",
+            "dateEntre": "2022-12-12T00:00:00",
+            "poste": "assistant",
+            "salaire": 1400.0,
+            "manager": null,
+            "Id": null,
+            "Employes": [],
+            "DateEntre": "2022-12-12T00:00:00",
+            "Poste": "assistant",
+            "Salaire": 1400.0,
+            "Manager": null,
+            "NumeroSS": "585",
+            "Nom": "zerf",
+            "Prenom": "zref",
+            "DateNaissance": "2002-01-01T00:00:00",
+            "Adresse": "zfe",
+            "Email": "gres",
+            "Telephone": "65432"
+          },
+          null,
+          null
+        ],
+        "DateEntre": "2022-12-12T00:00:00",
+        "Poste": "directeur logistique",
+        "Salaire": 12000.0,
+        "Manager": null,
+        "NumeroSS": "97",
+        "Nom": "oui",
+        "Prenom": "tan",
+        "DateNaissance": "2000-12-12T00:00:00",
+        "Adresse": "oijnh",
+        "Email": "iuyg",
+        "Telephone": "0125487"
+      },
+      "Id": null,
+      "Employes": [],
+      "DateEntre": "2019-12-12T00:00:00",
+      "Poste": "chauffeur",
+      "Salaire": 1800.0,
+      "Manager": {
+        "$ref": "50"
+      },
+      "NumeroSS": "367",
+      "Nom": "Zoubir",
+      "Prenom": "lahssane",
+      "DateNaissance": "1989-12-12T00:00:00",
+      "Adresse": "4 rue kouloi",
+      "Email": "zoubir@chauffeur.fr",
+      "Telephone": "0125364745"
+    },
+    "Vehicule": {
+      "$id": "52",
+      "Kilometrage": 1590.0
+    },
+    "DateCommande": "2024-05-18T00:00:00",
+    "VilleDepart": "PARIS",
+    "VilleArrivee": "MARSEILLES",
+    "Prix": 2385.0
+  },
+  {
+    "$id": "53",
+    "IdCommande": 12,
+    "Client": {
+      "$id": "54",
+      "Ville": "Chelles",
+      "Achats": 400.0,
+      "NumeroSS": "2021092",
+      "Nom": "Amara",
+      "Prenom": "Ines",
+      "DateNaissance": "2002-10-03T00:00:00",
+      "Adresse": "Chelles",
+      "Email": "ines@ines.fr",
+      "Telephone": "0125462"
+    },
+    "Chauffeur": {
+      "$id": "55",
+      "dateEntre": "2022-12-12T00:00:00",
+      "poste": "chauffeur$",
+      "salaire": 1200.0,
+      "manager": {
+        "$id": "56",
+        "dateEntre": "2022-12-12T00:00:00",
+        "poste": "directeur logistique",
+        "salaire": 12000.0,
+        "manager": null,
+        "Id": null,
+        "Employes": [
+          null,
+          null
+        ],
+        "DateEntre": "2022-12-12T00:00:00",
+        "Poste": "directeur logistique",
+        "Salaire": 12000.0,
+        "Manager": null,
+        "NumeroSS": "97",
+        "Nom": "oui",
+        "Prenom": "tan",
+        "DateNaissance": "2000-12-12T00:00:00",
+        "Adresse": "oijnh",
+        "Email": "iuyg",
+        "Telephone": "0125487"
+      },
+      "Id": null,
+      "Employes": [],
+      "DateEntre": "2022-12-12T00:00:00",
+      "Poste": "chauffeur$",
+      "Salaire": 1200.0,
+      "Manager": {
+        "$ref": "56"
+      },
+      "NumeroSS": "6958",
+      "Nom": "Lissame",
+      "Prenom": "Massil",
+      "DateNaissance": "2003-12-12T00:00:00",
+      "Adresse": "iuyhrg",
+      "Email": "ezef",
+      "Telephone": "012457898"
+    },
+    "Vehicule": {
+      "$id": "57",
+      "Kilometrage": 945.0
+    },
+    "DateCommande": "2024-04-18T00:00:00",
+    "VilleDepart": "LA ROCHELLE",
+    "VilleArrivee": "LYON",
+    "Prix": 1417.5
+  },
+  {
+    "$id": "58",
+    "IdCommande": 13,
+    "Client": {
+      "$id": "59",
+      "Ville": "Chelles",
+      "Achats": 400.0,
+      "NumeroSS": "2021092",
+      "Nom": "Amara",
+      "Prenom": "Ines",
+      "DateNaissance": "2002-10-03T00:00:00",
+      "Adresse": "Chelles",
+      "Email": "ines@ines.fr",
+      "Telephone": "0125462"
+    },
+    "Chauffeur": {
+      "$id": "60",
+      "dateEntre": "2021-12-12T00:00:00",
+      "poste": "chauffeur",
+      "salaire": 2145.0,
+      "manager": null,
+      "Id": null,
+      "Employes": [],
+      "DateEntre": "2021-12-12T00:00:00",
+      "Poste": "chauffeur",
+      "Salaire": 2145.0,
+      "Manager": null,
+      "NumeroSS": "2154",
+      "Nom": "gf",
+      "Prenom": "dsfze",
+      "DateNaissance": "2022-12-12T00:00:00",
+      "Adresse": "reffer",
+      "Email": "fee",
+      "Telephone": "215487"
+    },
+    "Vehicule": {
+      "$id": "61",
+      "Kilometrage": 1175.0
+    },
+    "DateCommande": "2024-04-15T00:00:00",
+    "VilleDepart": "PARIS",
+    "VilleArrivee": "TOULOUSE",
+    "Prix": 1762.5
+  },
+  {
+    "$id": "62",
+    "IdCommande": 14,
+    "Client": {
+      "$id": "63",
+      "Ville": "Chelles",
+      "Achats": 400.0,
+      "NumeroSS": "2021092",
+      "Nom": "Amara",
+      "Prenom": "Ines",
+      "DateNaissance": "2002-10-03T00:00:00",
+      "Adresse": "Chelles",
+      "Email": "ines@ines.fr",
+      "Telephone": "0125462"
+    },
+    "Chauffeur": {
+      "$id": "64",
+      "dateEntre": "2021-12-12T00:00:00",
+      "poste": "chauffeur",
+      "salaire": 1200.0,
+      "manager": null,
+      "EstDisponible": false,
+      "Commandes": [
+        {
+          "$ref": "62"
+        }
+      ],
+      "Id": null,
+      "Employes": [],
+      "DateEntre": "2021-12-12T00:00:00",
+      "Poste": "chauffeur",
+      "Salaire": 1200.0,
+      "Manager": null,
+      "NumeroSS": "4569",
+      "Nom": "j",
+      "Prenom": "k",
+      "DateNaissance": "2000-12-12T00:00:00",
+      "Adresse": "poi",
+      "Email": "pok",
+      "Telephone": "021478"
+    },
+    "Vehicule": {
+      "$id": "65",
+      "Kilometrage": 482.0
+    },
+    "DateCommande": "2024-04-19T00:00:00",
+    "VilleDepart": "PAU",
+    "VilleArrivee": "NIMES",
+    "Prix": 723.0
   }
 ]

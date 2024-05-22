@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TransConnect")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cc6ad10a6531d0fe96743c0d1e05dedcff1c2921")]
 [assembly: System.Reflection.AssemblyProductAttribute("TransConnect")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TransConnect")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

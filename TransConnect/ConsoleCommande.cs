@@ -18,12 +18,22 @@ namespace TransConnect
         public ConsoleCommande(GestionCommande gestionCommande, GestionClient gestionClient, GestionChauffeurs gestionChauffeurs)
         {
             this.gestionCommande =  ChargerCommande() ?? new GestionCommande();
-            this.gestionClient = ChargerClient() ?? new GestionClient();
+            this.gestionClient = ChargerClients();
             this.gestionChauffeurs = ChargerChauffeurs() ?? new GestionChauffeurs();
             this.cityGraph = new Graph();
-            this.cityGraph.LoadFromExcel(@"C:\Users\elbay\source\repos\TransConnect\Distances.xlsx");
+            this.cityGraph.LoadFromExcel(@"C:\Users\amire\source\repos\TransConnect\Distances.xlsx");
         }
 
+        private GestionClient ChargerClients()
+        {
+            if (File.Exists("clients.json"))
+            {
+                string jsonData = File.ReadAllText("clients.json");
+                var clients = JsonConvert.DeserializeObject<List<Client>>(jsonData) ?? new List<Client>();
+                return new GestionClient(clients);
+            }
+            return new GestionClient();
+        }
 
         public void Run()
         {
@@ -92,20 +102,6 @@ namespace TransConnect
                 return GestionCommande.LoadFromJson(jsonData);
             }
             return new GestionCommande();
-        }
-
-
-        private GestionClient ChargerClient()
-        {
-
-
-            if (File.Exists("clients.json"))
-            {
-                string jsonData = File.ReadAllText("clients.json");
-                return JsonConvert.DeserializeObject<GestionClient>(jsonData);
-            }
-
-            return null;
         }
 
         private GestionChauffeurs ChargerChauffeurs()

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,8 +16,20 @@ namespace TransConnect
         public ConsoleRemises(GestionCommande gestionCommande, GestionClient gestionClient, IRemise remise)
         {
             this.gestionCommande = gestionCommande;
-            this.gestionClient = gestionClient;
+            this.gestionClient = ChargerClients();
             this.remise = remise;
+        }
+
+
+        private GestionClient ChargerClients()
+        {
+            if (File.Exists("clients.json"))
+            {
+                string jsonData = File.ReadAllText("clients.json");
+                var clients = JsonConvert.DeserializeObject<List<Client>>(jsonData) ?? new List<Client>();
+                return new GestionClient(clients);
+            }
+            return new GestionClient();
         }
 
         public void Run()

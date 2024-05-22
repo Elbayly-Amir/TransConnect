@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\elbay\\source\\repos\\TransConnect\\TransConnect\\TransConnect.csproj": {}
+    "C:\\Users\\amire\\source\\repos\\TransConnect\\TransConnect\\TransConnect.csproj": {}
   },
   "projects": {
-    "C:\\Users\\elbay\\source\\repos\\TransConnect\\TransConnect\\TransConnect.csproj": {
+    "C:\\Users\\amire\\source\\repos\\TransConnect\\TransConnect\\TransConnect.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\elbay\\source\\repos\\TransConnect\\TransConnect\\TransConnect.csproj",
+        "projectUniqueName": "C:\\Users\\amire\\source\\repos\\TransConnect\\TransConnect\\TransConnect.csproj",
         "projectName": "TransConnect",
-        "projectPath": "C:\\Users\\elbay\\source\\repos\\TransConnect\\TransConnect\\TransConnect.csproj",
-        "packagesPath": "C:\\Users\\elbay\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\elbay\\source\\repos\\TransConnect\\TransConnect\\obj\\",
+        "projectPath": "C:\\Users\\amire\\source\\repos\\TransConnect\\TransConnect\\TransConnect.csproj",
+        "packagesPath": "C:\\Users\\amire\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\amire\\source\\repos\\TransConnect\\TransConnect\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\elbay\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\amire\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

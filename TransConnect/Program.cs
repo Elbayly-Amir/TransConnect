@@ -25,7 +25,8 @@ class Program
             Console.WriteLine("5. Statistiques");
             Console.WriteLine("6. Gestion des Dépenses");
             Console.WriteLine("7. Gestion des réclamations");
-            Console.WriteLine("8. Quitter");
+            Console.WriteLine("8. Gestion des remises");
+            Console.WriteLine("9. Quitter");
 
             Console.Write("Entrez votre choix : ");
             string choix = Console.ReadLine();
@@ -54,6 +55,9 @@ class Program
                     GestionReclamations();
                     break;
                 case "8":
+                    GestionRemises();
+                    break;
+                case "9":
                     continuer = false;
                     Console.WriteLine("Fermeture de l'application...");
                     break;
@@ -105,6 +109,13 @@ class Program
     {
         ConsoleReclamations reclamationsManager = new ConsoleReclamations(gestionReclamations);
         reclamationsManager.Run();
+    }
+
+    static void GestionRemises()
+    {
+        var remise = new RemiseMensuelle();
+        var consoleRemises = new ConsoleRemises(gestionCommande, gestionClient, remise);
+        consoleRemises.Run();
     }
 }
     

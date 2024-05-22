@@ -1,24 +1,13 @@
 [
   {
-    "Ville": "uyf",
-    "Achats": 45.0,
-    "NumeroSS": "525254",
-    "Nom": "ughh",
-    "Prenom": "uyttf",
-    "DateNaissance": "0200-12-12T00:00:00",
-    "Adresse": "hyvv",
-    "Email": "jhv",
-    "Telephone": "87"
-  },
-  {
-    "Ville": "paris",
-    "Achats": 455.0,
-    "NumeroSS": "21548",
-    "Nom": "poli",
-    "Prenom": "lipo",
-    "DateNaissance": "2001-12-01T00:00:00",
-    "Adresse": "azerty",
-    "Email": "youi",
-    "Telephone": "012587"
+    "Ville": "Chelles",
+    "Achats": 400.0,
+    "NumeroSS": "2021092",
+    "Nom": "Amara",
+    "Prenom": "Ines",
+    "DateNaissance": "2002-10-03T00:00:00",
+    "Adresse": "Chelles",
+    "Email": "ines@ines.fr",
+    "Telephone": "0125462"
   }
 ]
